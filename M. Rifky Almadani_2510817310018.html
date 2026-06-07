@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" rel="stylesheet">
+    
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@400;700&family=Playfair+Display:wght@700&family=Montserrat:wght@400;500;700&display=swap" rel="stylesheet">
+
+    <style>
+        .bg-custom-gray {
+            background-color: #A3C4DC !important;
+        }
+        body {
+            font-family: 'Montserrat', sans-serif;
+            background-color: #F0F5F9;
+            color: #16203B;
+        }
+        .serif-font {
+            font-family: 'Playfair Display', serif;
+            font-weight: 700;
+        }
+        .cinzel-font {
+            font-family: 'Cinzel Decorative', serif;
+            font-weight: 700;
+        }
+
+        .navbar-brand {
+            font-size: 1.8rem;
+            color: #16203B !important;
+        }
+        .nav-menu .nav-link {
+            color: #556677;
+            font-size: 0.75rem;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            margin: 0 8px;
+            padding: 8px 20px;
+        }
+        .nav-menu .nav-link.active {
+            color: #16203B;
+            border: 1px solid #16203B;
+            border-radius: 50px;
+        }
+
+        .hero-title {
+            font-size: 2rem;
+            margin-bottom: 5px;
+        }
+        .hero-subtitle {
+            font-size: 0.7rem;
+            letter-spacing: 4px;
+            color: #6C8299;
+            text-transform: uppercase;
+            margin-top: 15px;
+        }
+
+        .filter-nav .nav-link {
+            color: #6C8299;
+            font-weight: 500;
+            font-size: 0.85rem;
+            margin: 0 5px;
+            padding: 5px 20px;
+        }
+        .filter-nav .nav-link.active {
+            color: #F0F5F9;
+            background-color: #4A74A5;
+            border: 1px solid #4A74A5;
+            border-radius: 50px;
+        }
+
+        .gallery-img {
+            width: 100%;
+            height: 220px;
+            object-fit: cover;
+        }
+
+        .social-icons a {
+            color: #4A74A5;
+            font-size: 1.1rem;
+            margin: 0 8px;
+            text-decoration: none;
+        }
+        .social-icons a:hover {
+            color: #16203B;
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg bg-custom-gray pt-4 pb-3">
+        <div class="container">
+            <a class="navbar-brand cinzel-font" href="#">Denia</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                <ul class="navbar-nav nav-menu align-items-center">
+                    <li class="nav-item"><a class="nav-link active" href="#">HOME</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">ABOUT ME</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">PORTFOLIO</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">CONTACT</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container text-center mt-5 mb-5 pt-3">
+        <h2 class="serif-font hero-title">Hi. Hello.. I Am M. Rifky Almadani!</h2>
+        <h3 class="serif-font fs-4">Ini dia foto my MBG di Game Wuthering Wave!</h3>
+        <p class="hero-subtitle">5★ / Fusion  / Rectifier</p>
+    </div>
+
+<div class="container text-center mb-4">
+        <nav class="nav justify-content-center filter-nav" role="tablist">
+            <a class="nav-link active" data-bs-toggle="tab" href="#tab-all" role="tab">All</a>
+            <a class="nav-link" data-bs-toggle="tab" href="#tab-ingame" role="tab">Ingame</a>
+            <a class="nav-link" data-bs-toggle="tab" href="#tab-official" role="tab">Official Art</a>
+            <a class="nav-link" data-bs-toggle="tab" href="#tab-quest" role="tab">Quest</a>
+        </nav>
+    </div>
+
+    <div class="container mb-5">
+        <div class="tab-content" id="galleryTabContent">
+            
+            <div class="tab-pane fade show active" id="tab-all" role="tabpanel">
+                <div class="row g-2">
+                    <div class="col-6 col-md-3"><img src="gambar/Ingame 13.jpg" class="gallery-img rounded" alt="Photo 1"></div>
+                    <div class="col-6 col-md-3"><img src="gambar/Ingame 2.jpg" class="gallery-img rounded" alt="Photo 2"></div>
+                    <div class="col-6 col-md-3"><img src="gambar/Ingame 7.jpg" class="gallery-img rounded" alt="Photo 3"></div>
+                    <div class="col-6 col-md-3"><img src="gambar/Ingame 1.jpg" class="gallery-img rounded" alt="Photo 4"></div>
+                    <div class="col-6 col-md-3"><img src="gambar/OffArt 14.png" class="gallery-img rounded" alt="Photo 5"></div>
+                    <div class="col-6 col-md-3"><img src="gambar/OffArt 15.png" class="gallery-img rounded" alt="Photo 6"></div>
+                    <div class="col-6 col-md-3"><img src="gambar/OffArt 4.png" class="gallery-img rounded" alt="Photo 7"></div>
+                    <div class="col-6 col-md-3"><img src="gambar/OffArt 12.png" class="gallery-img rounded" alt="Photo 8"></div>
+                    <div class="col-6 col-md-3"><img src="gambar/Denia 9.png" class="gallery-img rounded" alt="Photo 9"></div>
+                    <div class="col-6 col-md-3"><img src="gambar/Denia 10.png" class="gallery-img rounded" alt="Photo 10"></div>
+                    <div class="col-6 col-md-3"><img src="gambar/Denia 11.png" class="gallery-img rounded" alt="Photo 11"></div>
+                    <div class="col-6 col-md-3"><img src="gambar/Denia 12.png" class="gallery-img rounded" alt="Photo 12"></div>
+                    <div class="col-6 col-md-3"><img src="gambar/Denia 13.png" class="gallery-img rounded" alt="Photo 13"></div>
+                    <div class="col-6 col-md-3"><img src="gambar/Denia 14.png" class="gallery-img rounded" alt="Photo 14"></div>
+                    <div class="col-6 col-md-3"><img src="gambar/Denia 15.png" class="gallery-img rounded" alt="Photo 15"></div>
+                    <div class="col-6 col-md-3"><img src="gambar/Denia 16.png" class="gallery-img rounded" alt="Photo 16"></div>
+                </div>
+            </div>
+
+            <div class="tab-pane fade" id="tab-ingame" role="tabpanel">
+                <div class="row g-2">
+                    <div class="col-6 col-md-3"><img src="gambar/Ingame 1.jpg" class="gallery-img rounded" alt="Ingame 1"></div>
+                    <div class="col-6 col-md-3"><img src="gambar/Ingame 2.jpg" class="gallery-img rounded" alt="Ingame 2"></div>
+                    <div class="col-6 col-md-3"><img src="gambar/Ingame 3.jpg" class="gallery-img rounded" alt="Ingame 3"></div>
+                    <div class="col-6 col-md-3"><img src="gambar/Ingame 4.jpg" class="gallery-img rounded" alt="Ingame 4"></div>
+                    <div class="col-6 col-md-3"><img src="gambar/Ingame 5.jpg" class="gallery-img rounded" alt="Ingame 5"></div>
+                    <div class="col-6 col-md-3"><img src="gambar/Ingame 6.jpg" class="gallery-img rounded" alt="Ingame 6"></div>
+                    <div class="col-6 col-md-3"><img src="gambar/Ingame 7.jpg" class="gallery-img rounded" alt="Ingame 7"></div>
+                    <div class="col-6 col-md-3"><img src="gambar/Ingame 8.jpg" class="gallery-img rounded" alt="Ingame 8"></div>
+                    <div class="col-6 col-md-3"><img src="gambar/Ingame 9.jpg" class="gallery-img rounded" alt="Ingame 9"></div>
+                    <div class="col-6 col-md-3"><img src="gambar/Ingame 10.jpg" class="gallery-img rounded" alt="Ingame 10"></div>
+                    <div class="col-6 col-md-3"><img src="gambar/Ingame 11.jpg" class="gallery-img rounded" alt="Ingame 11"></div>
+                    <div class="col-6 col-md-3"><img src="gambar/Ingame 12.jpg" class="gallery-img rounded" alt="Ingame 12"></div>
+                    <div class="col-6 col-md-3"><img src="gambar/Ingame 13.jpg" class="gallery-img rounded" alt="Ingame 13"></div>
+                    <div class="col-6 col-md-3"><img src="gambar/Ingame 14.jpg" class="gallery-img rounded" alt="Ingame 14"></div>
+                    <div class="col-6 col-md-3"><img src="gambar/Ingame 15.jpg" class="gallery-img rounded" alt="Ingame 15"></div>
+                    <div class="col-6 col-md-3"><img src="gambar/Ingame 16.jpg" class="gallery-img rounded" alt="Ingame 16"></div>
+                </div>
+            </div>
+
+            <div class="tab-pane fade" id="tab-official" role="tabpanel">
+                <div class="row g-2">
+                    <div class="col-6 col-md-3"><img src="gambar/OffArt 1.jpg" class="gallery-img rounded" alt="Official 1"></div>
+                    <div class="col-6 col-md-3"><img src="gambar/OffArt 2.png" class="gallery-img rounded" alt="Official 2"></div>
+                    <div class="col-6 col-md-3"><img src="gambar/OffArt 3.png" class="gallery-img rounded" alt="Official 3"></div>
+                    <div class="col-6 col-md-3"><img src="gambar/OffArt 4.png" class="gallery-img rounded" alt="Official 4"></div>
+                    <div class="col-6 col-md-3"><img src="gambar/OffArt 5.png" class="gallery-img rounded" alt="Official 5"></div>
+                    <div class="col-6 col-md-3"><img src="gambar/OffArt 6.png" class="gallery-img rounded" alt="Official 6"></div>
+                    <div class="col-6 col-md-3"><img src="gambar/OffArt 7.png" class="gallery-img rounded" alt="Official 7"></div>
+                    <div class="col-6 col-md-3"><img src="gambar/OffArt 8.png" class="gallery-img rounded" alt="Official 8"></div>
+                    <div class="col-6 col-md-3"><img src="gambar/OffArt 9.png" class="gallery-img rounded" alt="Official 9"></div>
+                    <div class="col-6 col-md-3"><img src="gambar/OffArt 10.png" class="gallery-img rounded" alt="Official 10"></div>
+                    <div class="col-6 col-md-3"><img src="gambar/OffArt 11.png" class="gallery-img rounded" alt="Official 11"></div>
+                    <div class="col-6 col-md-3"><img src="gambar/OffArt 12.png" class="gallery-img rounded" alt="Official 12"></div>
+                    <div class="col-6 col-md-3"><img src="gambar/OffArt 13.png" class="gallery-img rounded" alt="Official 13"></div>
+                    <div class="col-6 col-md-3"><img src="gambar/OffArt 14.png" class="gallery-img rounded" alt="Official 14"></div>
+                    <div class="col-6 col-md-3"><img src="gambar/OffArt 15.png" class="gallery-img rounded" alt="Official 15"></div>
+                    <div class="col-6 col-md-3"><img src="gambar/OffArt 16.png" class="gallery-img rounded" alt="Official 16"></div>
+                </div>
+            </div>
+
+            <div class="tab-pane fade" id="tab-quest" role="tabpanel">
+                <div class="row g-2">
+                    <div class="col-6 col-md-3"><img src="gambar/Denia 1.png" class="gallery-img rounded" alt="Photo 1"></div>
+                    <div class="col-6 col-md-3"><img src="gambar/Denia 2.png" class="gallery-img rounded" alt="Photo 2"></div>
+                    <div class="col-6 col-md-3"><img src="gambar/Denia 3.png" class="gallery-img rounded" alt="Photo 3"></div>
+                    <div class="col-6 col-md-3"><img src="gambar/Denia 4.png" class="gallery-img rounded" alt="Photo 4"></div>
+                    <div class="col-6 col-md-3"><img src="gambar/Denia 5.png" class="gallery-img rounded" alt="Photo 5"></div>
+                    <div class="col-6 col-md-3"><img src="gambar/Denia 6.png" class="gallery-img rounded" alt="Photo 6"></div>
+                    <div class="col-6 col-md-3"><img src="gambar/Denia 7.png" class="gallery-img rounded" alt="Photo 7"></div>
+                    <div class="col-6 col-md-3"><img src="gambar/Denia 8.png" class="gallery-img rounded" alt="Photo 8"></div>
+                    <div class="col-6 col-md-3"><img src="gambar/Denia 9.png" class="gallery-img rounded" alt="Photo 9"></div>
+                    <div class="col-6 col-md-3"><img src="gambar/Denia 10.png" class="gallery-img rounded" alt="Photo 10"></div>
+                    <div class="col-6 col-md-3"><img src="gambar/Denia 11.png" class="gallery-img rounded" alt="Photo 11"></div>
+                    <div class="col-6 col-md-3"><img src="gambar/Denia 12.png" class="gallery-img rounded" alt="Photo 12"></div>
+                    <div class="col-6 col-md-3"><img src="gambar/Denia 13.png" class="gallery-img rounded" alt="Photo 13"></div>
+                    <div class="col-6 col-md-3"><img src="gambar/Denia 14.png" class="gallery-img rounded" alt="Photo 14"></div>
+                    <div class="col-6 col-md-3"><img src="gambar/Denia 15.png" class="gallery-img rounded" alt="Photo 15"></div>
+                    <div class="col-6 col-md-3"><img src="gambar/Denia 16.png" class="gallery-img rounded" alt="Photo 16"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container text-center mt-5 pb-5">
+        <h4 class="cinzel-font mb-1">Denia</h4>
+        <p class="text-secondary" style="font-size: 0.75rem;">© Copyrights 2026. All Rights Reserved.</p>
+        
+        <div class="social-icons mt-3">
+            <a href="#"><i class="fab fa-dribbble"></i></a>
+            <a href="#"><i class="fab fa-behance"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-500px"></i></a>
+            <a href="#"><i class="fab fa-flickr"></i></a>
+            <a href="#"><i class="fab fa-facebook-f"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
